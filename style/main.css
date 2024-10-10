@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+:root {
+    --accent-color: #00A4E5
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+/* header */
+.header {
+    background-image: url(../img/bg.png);
+    text-align: center;
+    color: #fff;
+    max-width: 1440px;
+    padding: 40px 0 72px;
+    margin: 0 auto;
+}
+.header_logo {
+    margin-bottom: 300px;
+}
+.header_h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 5.70937px;
+    margin-left: 14px;
+    margin-bottom: -5px;
+}
+.header_h3 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-bottom: 223px;
+}
+.scroll_h3 {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 3.7px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 4px;
+}
+
+/* Раздел: Our story */
+.story {
+
+}
+.story_title_h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 50px 0;
+}
+.story_title_h2::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    display: block;
+    margin: 10px auto 0;
+}
+.story_flex {
+    display: flex;
+    justify-content: space-between;
+}
+.story_left {
+    max-width: 398px;
+}
+.story_title_h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.accent-color {
+    color: var(--accent-color);
+}
+.story_text {
+
+}
+.story_right {
+    display: flex;
+    align-items: flex-end;
+}
+.story-item {
+    margin-right: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    width: 140px;
+    height: 224px;
+}
+
+.story-item:nth-child(1) {
+    background-image: url(../img/Bitmap.png);
+}
+.story-item:nth-child(2) {
+    background-image: url(../img/bitmap_2.png);
+}
+.story-item:nth-child(3) {
+    background-image: url(../img/Bitmap_3.png);
+    margin-right: 0;
+}
