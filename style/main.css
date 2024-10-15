@@ -23,12 +23,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0 auto;
     padding: 0 250px;
 }
-@media screen and (max-width: 1280px){
-    .container {
-        padding: 0 50px;
-    }
-}
-
 .text-h2 {
     text-transform: uppercase;
     font-weight: bold;
@@ -71,9 +65,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     font-weight: normal;
     margin-left: 4px;
 }
-
 /* раздел: navbar*/
-
 .navbar {
     padding: 24px 0 21px;
     border-bottom: 1px solid #E6E6E6;
@@ -107,7 +99,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .navbar_menu_li {
     list-style: none;
 }
-
 /* Раздел: Our story */
 .story {
 padding: 7px 0;
@@ -160,7 +151,6 @@ padding: 7px 0;
     width: 140px;
     height: 224px;
 }
-
 .story-item:nth-child(1) {
     background-image: url(../img/Bitmap.png);
 }
@@ -171,32 +161,14 @@ padding: 7px 0;
     background-image: url(../img/Bitmap_3.png);
     margin-right: 0;
 }
-
-@media screen and (max-width: 1280px){
-    .story_flex {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 768px){
-
-}
-
 .services {
     padding-top: 110px;
+    padding-bottom: 118px;
 }
 .services__flex {
     display: flex;
     justify-content: space-between;
 }
-.text-h2 {
-
-}
-.services_h2 {
-
-}
-
 .services_h2::after {
     content: '';
     width: 50px;
@@ -218,12 +190,12 @@ padding: 7px 0;
     width: 150px;
     height: 40px;
     background-color: var(--accent-color);
-    margin-top: 3px;
     border: none;
     color: #fff;
     font-size: 13px;
     font-weight: 700;
     line-height: -1px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 .services__grid {
@@ -232,7 +204,6 @@ padding: 7px 0;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-
 .services__grid-item {
     border: 1px solid #E6E6E6;
     padding: 35px 20px;
@@ -254,8 +225,127 @@ padding: 7px 0;
     line-height: 23px;
     letter-spacing: 0.19px;
 }
-
+.get-in-touch {
+    background-image: url(../img/get-in-tuch_bg.png);
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+    height: 495px;
+}
+.get-in-touch_h2 {
+    max-width: 350px;
+    margin: 0 auto;
+    color: rgb(72, 85, 91);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    margin-bottom: 30px;
+}
+.services_btn {
+    letter-spacing: 0.15px;
+}
+.newsletter {
+    background-color: rgb(23, 24, 25);
+    padding: 35px 0;
+}
+.newsletter__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter_h2 {
+    margin-right: 70px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.85px;
+}
+.newsletter_input {
+    width: 250px;
+    height: 40px;
+    border: none;
+    padding: 16px;
+    margin-left: 5px;
+}
+.services_btn {
+    margin-left: -5px;
+}
+.footer {
+    color: #fff;
+    background-color: #141A20;
+}
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footer__flex-company {
+    max-width: 250px;
+}
+.footer-h4 {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.footer_logo {
+    margin-bottom: 16px;
+}
+.footer_p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.footer__flex-links {
+    display: flex;
+}
+.links_ul {
+    margin-right: 30px;
+}
+.links_ul:last-child {
+    margin-right: 0;
+}
+.links_ul2 {
+    margin-top: 30px;
+}
+.links-item {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    list-style: none;
+}
+.footer__flex-contact_us {
+    max-width: 140px;
+}
+.footer_a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+.socials_icon {
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.copyright {
+    background-color: #171819;
+    text-align: center;
+    padding: 22px;
+}
 @media screen and (max-width: 1280px){
+    .container {
+        padding: 0 50px;
+    }
+    .story_flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .services__flex {
         display: block;
         text-align: center;
@@ -270,8 +360,22 @@ padding: 7px 0;
     .services__grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    .newsletter__flex {
+        flex-wrap: wrap;
+    }
+    .footer__flex {
+        flex-wrap: wrap;
+    }
 }
-
 @media screen and (max-width: 768px){
-
+    .newsletter_h2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer__flex-item {
+        margin-top: 20px;
+    }
+    .footer__flex {
+        padding: 20px 0;
+    }
 }
