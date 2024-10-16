@@ -5,10 +5,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Konstuct Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="style/main.css" />
 </head>
 
 <body>
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <a href="#!"><i class="material-icons">home</i>HOME</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">people</i>ABOUT</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">grade</i>SERVICES</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">work</i>WORK</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">phone</i>CONTACT</a>
+    </li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li>
+      <a href="#!" class="sidenav-close"><i class="material-icons">close</i>CLOSE</a>
+    </li>
+  </ul>
+
   <header class="header">
     <img class="header_logo" src="img/projeco-logo.png" alt="">
     <h1 class="header_h1">partner with konstuct</h1>
@@ -20,6 +47,13 @@
     <div class="container">
       <div class="navbar__flex">
         <img src="img/projeco-logo-black.png" alt="" class="navbar_logo">
+        <div class="burger_triger">
+          <a data-target="slide-out" class="burger sidenav-trigger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </a>
+        </div>
         <ul class="navbar_menu">
           <li class="navbar_menu_li"><a class="navbar_menu-item" href="/">home</a></li>
           <li class="navbar_menu_li"><a class="navbar_menu-item" href="/">about</a></li>
@@ -153,5 +187,9 @@
     </div>
     <div class="copyright">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</div>
   </footer>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
